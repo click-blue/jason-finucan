@@ -387,6 +387,11 @@ body {
   transform: rotateX(0)rotateY(180deg)rotateZ(0);
 }
 
+.photo._1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
 .client-link {
   background-color: #fff;
   border: 1px #ddd;
@@ -464,6 +469,7 @@ body {
 }
 
 .hero-right {
+  flex-flow: column;
   justify-content: flex-end;
   align-items: center;
   display: flex;
@@ -718,6 +724,34 @@ body {
   display: flex;
 }
 
+.paragraph-3 {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.div-block-21 {
+  text-align: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  background-color: var(--green);
+  color: var(--blue);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.link-2 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 991px) {
   .hero-section {
     padding-top: 80vw;
@@ -892,6 +926,11 @@ body {
     padding-right: 5%;
   }
 
+  .testimonials-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .navbar {
     padding-left: 0;
     padding-right: 0;
@@ -933,7 +972,7 @@ body {
   .testimonial {
     border-bottom-width: 4px;
     min-width: 280px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .paragraph-2 {
@@ -997,6 +1036,16 @@ body {
     width: 200px;
     height: 200px;
     margin-left: auto;
+  }
+
+  .photo._1 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .photo.b {
+    width: 100%;
   }
 
   .client-link {
@@ -1099,8 +1148,22 @@ body {
   .div-block-19 {
     flex-flow: column;
   }
+
+  .paragraph-3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .link-2 {
+    font-size: 16px;
+  }
 }
 
-#w-node-dbd5e61a-a931-f886-ada8-8ccdfba31121-f505392a, #w-node-c6b7e640-3c3d-99cb-aff3-f61dfbb8beca-f505392a {
+#w-node-dbd5e61a-a931-f886-ada8-8ccdfba31121-f505392a, #w-node-c6b7e640-3c3d-99cb-aff3-f61dfbb8beca-f505392a, #w-node-_2189404b-0163-e81d-09ef-b3ebd9e26106-f505392a {
   align-self: start;
 }
