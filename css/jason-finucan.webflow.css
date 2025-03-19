@@ -543,7 +543,7 @@ body {
 
 .image-7 {
   filter: brightness(105%);
-  max-width: 800px;
+  max-width: 50%;
   margin-right: 30px;
 }
 
