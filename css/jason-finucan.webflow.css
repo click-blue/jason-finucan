@@ -40,9 +40,9 @@ body {
 .testimonials-section {
   border-top: 10px solid var(--green);
   border-bottom: 10px solid var(--green);
-  background-color: var(--blue);
   padding-top: 120px;
   padding-bottom: 120px;
+  position: relative;
 }
 
 .bio-section {
@@ -155,7 +155,7 @@ body {
 }
 
 .hero-col._1 {
-  max-width: 55%;
+  max-width: 50%;
 }
 
 .paragraph {
@@ -221,6 +221,10 @@ body {
   line-height: 32px;
 }
 
+.section-pg.sm {
+  font-size: 20px;
+}
+
 .felx-row {
   width: 1280px;
   max-width: 100%;
@@ -239,8 +243,10 @@ body {
   border-style: solid;
   border-width: 1px 1px 10px;
   border-color: var(--green);
-  background-color: var(--blue);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: #fff;
+  background-color: #0f356d80;
   flex-flow: column;
   flex: 1;
   justify-content: flex-start;
@@ -327,8 +333,12 @@ body {
 }
 
 .hero-h1-2.c._1 {
-  color: var(--green);
+  color: #fff;
   margin-bottom: 50px;
+}
+
+.hero-h1-2._11 {
+  color: #fff;
 }
 
 .hero-left {
@@ -403,6 +413,16 @@ body {
   margin-bottom: 60px;
 }
 
+.photo._1._22 {
+  margin: 60px 0 60px 40px;
+}
+
+.photo._3 {
+  width: 250px;
+  height: 160px;
+  margin-left: 0;
+}
+
 .client-link {
   background-color: #fff;
   border: 1px #ddd;
@@ -421,6 +441,10 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.photo-image.a {
+  filter: grayscale();
 }
 
 .heading-6 {
@@ -596,6 +620,12 @@ body {
   height: 100%;
 }
 
+.image-8._11 {
+  filter: none;
+  position: absolute;
+  inset: 0%;
+}
+
 .slider {
   height: 40vw;
 }
@@ -700,6 +730,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  position: relative;
 }
 
 .success-message {
@@ -793,6 +824,90 @@ body {
   margin-right: 8px;
   font-size: 22px;
   line-height: 26px;
+}
+
+.kn-sh {
+  color: var(--green);
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.kn-sh._22 {
+  margin-top: 20px;
+}
+
+.sec-button {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #fff3;
+  border: 1px solid #fff3;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .25s ease-in-out;
+}
+
+.sec-button:hover {
+  border-color: var(--green);
+  background-color: var(--green);
+  color: #000;
+}
+
+.photo-image-copy {
+  object-fit: cover;
+}
+
+.section-2 {
+  border-top: 10px solid var(--green);
+  background-color: var(--blue);
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.div-block-23 {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.div-block-24 {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  display: flex;
+}
+
+.play-icon {
+  width: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+  position: absolute;
+  inset: 50% 0% 0% 50%;
+}
+
+.image-11 {
+  z-index: 1;
+  opacity: .75;
+  filter: invert();
+  width: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+  position: absolute;
+  inset: 50% auto auto 50%;
+}
+
+.div-block-25 {
+  z-index: 1;
+  aspect-ratio: auto;
+  background-color: #0f356d80;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (max-width: 991px) {
@@ -903,6 +1018,14 @@ body {
     margin-left: auto;
   }
 
+  .photo._1._22 {
+    margin-left: 0;
+  }
+
+  .photo._3 {
+    margin-right: 0;
+  }
+
   .hero-content-2 {
     flex-flow: column;
     grid-template-columns: 1fr;
@@ -932,6 +1055,10 @@ body {
     flex-flow: column;
   }
 
+  .flex-block.i {
+    flex-flow: wrap-reverse;
+  }
+
   .slider {
     height: 60vw;
   }
@@ -954,6 +1081,17 @@ body {
 
   .div-block-19 {
     flex-flow: wrap;
+  }
+
+  .kn-sh._22 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .div-block-24 {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1012,6 +1150,11 @@ body {
     line-height: 24px;
   }
 
+  .section-pg.sm {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   .testimonial {
     border-bottom-width: 4px;
     min-width: 280px;
@@ -1066,6 +1209,7 @@ body {
   }
 
   .hero-paragraph {
+    text-align: left;
     font-size: 18px;
     line-height: 24px;
   }
@@ -1087,8 +1231,16 @@ body {
     margin-bottom: 30px;
   }
 
+  .photo._1._22 {
+    margin: 0 20px;
+  }
+
   .photo.b {
     width: 100%;
+  }
+
+  .photo._3 {
+    width: 280px;
   }
 
   .client-link {
@@ -1098,6 +1250,11 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-content-2._2 {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .div-block-5 {
