@@ -836,6 +836,10 @@ body {
   margin-top: 20px;
 }
 
+.kn-sh._22._23 {
+  margin-top: 60px;
+}
+
 .sec-button {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -908,6 +912,22 @@ body {
   display: flex;
   position: absolute;
   inset: 0%;
+}
+
+.link-5 {
+  border-bottom: 4px solid var(--green);
+  color: #fff;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+}
+
+.link-5:hover {
+  color: var(--green);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 991px) {
